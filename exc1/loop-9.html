@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Loop 9</h1>
+
+
+
+
+
+    <script>
+
+        let minNum = Number.MAX_SAFE_INTEGER;
+        let maxNum = Number.MIN_SAFE_INTEGER;
+
+        let promptLoop = true;
+        while (promptLoop = true) {
+
+            let userInput = prompt(" Enter a number. to quit enter 0 or a negative number")
+            if (isNaN(userInput)) {
+                alert("Please insert a valid number")
+            }
+            else if (Number(userInput) <= 0) {
+                alert("Your final max number is " + maxNum + " and your final min number is " + minNum)
+                promptLoop = false
+                break
+            }
+            else {
+
+                if (userInput > maxNum) {
+                    maxNum = Number(userInput)
+                }
+                if (userInput < minNum) {
+                    minNum = Number(userInput);
+                }
+
+                console.log("Your current max number is " + maxNum + " and your current min number is " + minNum);
+
+            }
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

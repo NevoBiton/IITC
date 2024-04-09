@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Loop 6</h1>
+
+
+
+
+    <script>
+
+
+
+        let minNum = Number.MAX_SAFE_INTEGER
+        let maxNum = Number.MIN_SAFE_INTEGER
+
+        for (let count = 0; count < 5; count++) {
+            let validNum = false;
+            while (validNum == false) {
+                let userInput = prompt("Enter number");
+                if (isNaN(userInput)) {
+                    alert("Please enter a valid number")
+                }
+                else {
+                    validNum = true
+                    if (userInput > maxNum) {
+                        maxNum = Number(userInput)
+                    }
+                    if (userInput < minNum) {
+                        minNum = Number(userInput);
+                    }
+                }
+
+            }
+
+            console.log("Max number is " + maxNum)
+            console.log("Min number is " + minNum)
+
+
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

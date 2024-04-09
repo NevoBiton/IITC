@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Loop 10</h1>
+
+
+
+
+
+
+
+    <script>
+
+        function separateDigits(number) {
+            let divisor = 1;
+
+            while (number / divisor >= 10) {
+                divisor *= 10;
+            }
+
+            while (divisor >= 1) {
+                let digit = Math.floor(number / divisor);
+                console.log(digit);
+                number %= divisor;
+                divisor /= 10;
+            }
+        }
+
+        let number = parseInt(prompt("Enter a number:"));
+
+        console.log("Digits separately:");
+        separateDigits(number);
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

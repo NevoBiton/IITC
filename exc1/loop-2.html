@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Loop 2</h1>
+
+
+    <script>
+
+
+
+        amount = 0;
+        for (let i = 0; i < 5; i++) {
+            isValid = false;
+            while (isValid == false) {
+                let userInput = prompt("Enter number");
+                if (isNaN(userInput)) {
+                    alert("Please insert a valid number")
+                }
+                else {
+                    amount += Number(userInput);
+                    isValid = true
+                }
+            }
+        }
+        alert("Amount is " + amount)
+        alert("Average amount is " + (amount / 5))
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Loop 11</h1>
+
+
+
+    <script>
+
+        let compRandomNumber = Math.floor(Math.random() * 99) + 1
+        console.log(compRandomNumber)
+        alert("The computer chose a number now its your time to guess !")
+
+        gameLoop = true;
+        while (gameLoop == true) {
+            let userGuess = prompt("Enter your guess")
+            if (isNaN(userGuess)) {
+                alert("Please insert a valid number")
+            }
+            else if (Number(userGuess) < compRandomNumber) {
+
+                alert("Your guess is lower than the right number")
+            }
+            else if (Number(userGuess) > compRandomNumber) {
+
+                alert("Your guess is higher than the right number")
+            }
+            else {
+                gameLoop = false;
+                alert("Good job you guessed the right number !! the number is " + compRandomNumber)
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
