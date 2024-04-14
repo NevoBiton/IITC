@@ -258,5 +258,42 @@
 //     return newList
 // }
 
-
 // console.log(noDuplicates(list))
+
+// String 1
+
+// function toUpper(string) {
+//     let newStr = string.toUpperCase()
+//     return newStr
+// }
+
+// let myName = 'nevo'
+
+// console.log(toUpper(myName))
+
+// String 2
+
+
+
+let names = ['Nevo', 'Nitai', 'Neta', 'Nadav']
+
+names.splice(2)
+
+console.log(names)
+
+// let a = 3
+// let b = 6
+
+// function switch1(a1) {
+
+//     a1 = 6
+//     return a1
+// }
+
+// console.log(switch1(a))
+// console.log(a);
+
+
+
+
+
