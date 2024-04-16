@@ -193,8 +193,6 @@ function enterColumn(playerName) {
     }
 }
 
-
-
 function checkPlace(rowInput, colInput) {
 
     if (board[rowInput - 1][colInput - 1] == '*') {

@@ -1,0 +1,104 @@
+@import url(reset.css); 
+
+body {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 2rem;
+}
+
+button {
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(211, 208, 204);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: rgb(219, 224, 228);
+    padding:15px;
+    width: 280px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signs-buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.numbers-buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.buttons-row {
+    display: flex;
+    gap: 5px;
+}
+
+.signs-buttons-wrapper button, .calculate-button {
+    background-color: rgb(43, 240, 43);
+}
+
+.calculate-button:hover, .signs-buttons-wrapper button:hover {
+    background-color:rgb(18, 211, 34);
+}
+
+.current-number-line-wrapper {
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.current-number-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: rgb(221, 243, 238);
+    border: 1px solid black;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.reset-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    border-radius: 6px;
+    height: 20px;
+    width: 30px;
+    margin: 0;
+    margin-left: 5px;
+
+}
+
+.reset-button:hover {
+    background-color: #fc9701;
+}
+

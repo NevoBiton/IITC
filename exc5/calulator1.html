@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+10+Charted&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="main-container">  
+    <div class="current-number-line-wrapper">
+        <div class="current-number-line">
+            <button class="reset-button" onclick="resetCalculator()">CE</button><p id="currentClickedNumber">0</p>
+        </div>
+    </div>  
+
+    <div class="buttons-wrapper">
+        <div class="numbers-buttons-wrapper">
+            <div class="buttons-row">
+                <button onclick="addNumberToCalculator(num = 7)">7</button><button onclick="addNumberToCalculator(num = 8)">8</button><button onclick="addNumberToCalculator(num = 9)">9</button>
+            </div>
+            <div class="buttons-row">
+                <button onclick="addNumberToCalculator(num = 4)">4</button><button onclick="addNumberToCalculator(num = 5)">5</button><button onclick="addNumberToCalculator(num = 6)">6</button>
+            </div>
+            <div class="buttons-row">
+                <button onclick="addNumberToCalculator(num = 1)">1</button><button onclick="addNumberToCalculator(num = 2)">2</button><button onclick="addNumberToCalculator(num = 3)">3</button>
+            </div>
+            <div class="buttons-row">
+                <button onclick="addNumberToCalculator(num = 0)">0</button><button  onclick="addDotToCalculator()">.</button><button class="calculate-button" onclick="calculate()">=</button>
+            </div>
+        </div>
+
+        <div class="signs-buttons-wrapper">
+            <button onclick="setOperator('/')">÷</button><button onclick="setOperator('*')" >x</button><button onclick="setOperator('-')">-</button><button onclick="setOperator('+')">+</button>
+        </div>
+    </div>
+</div>  
+
+  
+
+
+
+    
+    <script src="calculator1.js"></script>
+</body>
+</html>
