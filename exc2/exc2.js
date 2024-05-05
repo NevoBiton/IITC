@@ -8,8 +8,6 @@
 //         board += ' ' + i * j
 //     }
 //     console.log(board + '\n');
-
-
 // }
 
 
@@ -73,7 +71,7 @@
 
 // function astPrint(number) {
 
-//     counter = number
+//     // counter = number
 //     str = ''
 //     for (let i = 0; i < number; i++) {
 //         str += ' * '
@@ -134,7 +132,7 @@
 
 
 
-// Array 0.5
+// // Array 0.5
 
 // let list = [5, 3, 7, 8, 11]
 // let sum = 0
@@ -146,7 +144,7 @@
 // console.log(sum);
 
 
-// Array 0.7
+// // Array 0.7
 
 // let names = ['Nevo', 'Nitai', 'Neta', 'Nadav', 'Nir']
 
@@ -275,11 +273,11 @@
 
 
 
-let names = ['Nevo', 'Nitai', 'Neta', 'Nadav']
+// let names = ['Nevo', 'Nitai', 'Neta', 'Nadav']
 
-names.splice(2)
+// names.splice(2)
 
-console.log(names)
+// console.log(names)
 
 // let a = 3
 // let b = 6
@@ -292,6 +290,7 @@ console.log(names)
 
 // console.log(switch1(a))
 // console.log(a);
+
 
 
 

@@ -18,9 +18,6 @@ function generateComputerRandomNumber() {
     }
 }
 
-generateComputerRandomNumber()
-console.log(computerRandomNumber);
-
 function isValidGuess() {
     const userGuessArray = [elemInput1.valueAsNumber, elemInput2.valueAsNumber, elemInput3.valueAsNumber, elemInput4.valueAsNumber];
     const uniqueGuessSet = new Set(userGuessArray);
@@ -69,6 +66,9 @@ function checkGuess() {
     }
 
 }
+
+generateComputerRandomNumber()
+console.log(computerRandomNumber);
 
 
 
