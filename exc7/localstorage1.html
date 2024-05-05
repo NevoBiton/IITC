@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <p>enter your name</p><input id="input-message" type="text">
+    <button onclick="setFromLocalStorage()" class="set-data">Set</button>
+    <button onclick="getFromLocalStorage()" class="get-data">Get</button>
+    <button onclick="removeItem()" class="get-data">Remove</button>
+
+    <br>
+    <br>
+
+    <button onclick="add1toCount()" id="add-one-button">+1</button>
+    <button onclick="add2toCount()" id="add-two-button">+2</button>
+    <button onclick="showCount()" id="show-count-button">Show count</button>
+
+    <div><h4>Count 1 :</h4></div>
+    <div id="show-count-board"></div>
+    <div><h4>Count 2 :</h4></div>
+    <div id="show-count-board2"></div>
+
+
+    <script src="localstorage1.js"></script>
+</body>
+</html>
