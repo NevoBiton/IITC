@@ -22,7 +22,7 @@
 //     return sortedArray;
 // }
 
-let numArray = [7, 6, 5, 4, 3, 2];
+let numArray = [10, 5, 5, 8, 3, 2];
 
 function computeMin(numbers, indexToStart) {
 
@@ -31,8 +31,8 @@ function computeMin(numbers, indexToStart) {
     for (let i = indexToStart; i < numbers.length; i++) {
         const currentNumber = numbers[i];
         if (currentNumber < minNumber) {
-            minNumIndex = i
-            minNumber = currentNumber
+            minNumIndex = i;
+            minNumber = currentNumber;
         }
     }
     return minNumIndex
@@ -40,9 +40,9 @@ function computeMin(numbers, indexToStart) {
 
 function switchNumbers(numbers, indexI, indexJ) {
 
-    let temp = numbers[indexI]
-    numbers[indexI] = numbers[indexJ]
-    numbers[indexJ] = temp
+    let temp = numbers[indexI];
+    numbers[indexI] = numbers[indexJ];
+    numbers[indexJ] = temp;
 }
 
 function sortNumbers(numbers) {
