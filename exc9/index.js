@@ -1,18 +1,35 @@
 // exc 1
 
-let time = 0
-let myInterval1 = setInterval(function () {console.log(time += 1);}, 1000);
+// let time = 0
+// let myInterval1 = setInterval(function () {console.log(time += 1);}, 1000);
 
-function continueTime() {
-    myInterval1 = setInterval(function () {console.log(time += 1);}, 1000);
-}
+// function continueTime() {
+//     myInterval1 = setInterval(function () {console.log(time += 1);}, 1000);
+// }
 
 
 // exc 2
 
 const elemSortedArrayDiv = document.querySelector('.sorted-array-div')
-let myArray = [1,5,7,2,3,4]
-myArray.sort()
+let myArray = [123,54,7,2,3,4]
+sortArray(myArray)
+
+function sortArray(arr) {
+    if (!Array.isArray(arr)) {
+        return "Error: Input is not an array";
+    }
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = 0; j < arr.length - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr;
+}
+
 let index = 0
 let myInterval;
 
